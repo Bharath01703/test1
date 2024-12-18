@@ -1,7 +1,9 @@
 name: Run Python Script
 
 on:
-  workflow_dispatch:  # Allows manual triggering of the workflow
+  workflow_dispatch:  # Allows manual trigger of the workflow
+  schedule:           # Scheduled trigger
+    - cron: "*/5 * * * *"  # Run every 5 minutes
 
 jobs:
   run-script:
