@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt  # Install dependencies listed in requirements.txt
+        pip install pandas boto3 selenium  # Install dependencies listed in requirements.txt
 
     - name: Run Python script
       run: |
